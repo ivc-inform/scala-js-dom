@@ -86,10 +86,10 @@ pomExtra := (
 pomIncludeRepository := { _ => false }
 
 lazy val readme = ScalatexReadme(
-  folder = "readme",
+  //folder = "readme",
   url = "https://github.com/scala-js/scala-js-dom/tree/master",
   source = "Index",
-  targetFolder = "target/site",
+  wd = new File("target/site"),
   autoResources = Seq("example-opt.js")
 ).settings(
   scalaVersion := "2.12.4",
