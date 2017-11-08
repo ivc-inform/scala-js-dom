@@ -2008,7 +2008,7 @@ class Window
    *
    * MDN
    */
-  var onerror: js.Function4[Event, String, Int, Int, _] = js.native
+  var onerror: js.Function5[Event, String, Int, Int, Any, _] = js.native
   var onplaying: js.Function1[Event, _] = js.native
 
   /**
@@ -6571,7 +6571,7 @@ class WebSocket(var url: String = js.native, var protocol: String = js.native)
    *
    * MDN
    */
-  var onerror: js.Function1[ErrorEvent, _] = js.native
+  var onerror: js.Function1[Event, _] = js.native
 
   /**
    * A string indicating the type of binary data being transmitted by the connection.
